@@ -7,13 +7,13 @@ use swoole_lock;
 class SnowFlake
 {
     const SEQUENCE_BITS = 12;
-    const SEQUENCE_MAX = -1 ^ (-1 << self::SEQUENCE_BITS);
+    const SEQUENCE_MAX  = -1 ^ (-1 << self::SEQUENCE_BITS);
 
-    const WORKER_BITS = 10;
-    const WORKER_MAX = -1 ^ (-1 << self::WORKER_BITS);
+    const WORKER_BITS   = 10;
+    const WORKER_MAX    = -1 ^ (-1 << self::WORKER_BITS);
 
-    const TIME_SHIFT = self::WORKER_BITS + self::SEQUENCE_BITS;
-    const WORKER_SHIFT = self::SEQUENCE_BITS;
+    const TIME_SHIFT    = self::WORKER_BITS + self::SEQUENCE_BITS;
+    const WORKER_SHIFT  = self::SEQUENCE_BITS;
 
     protected $timestamp;
     protected $worker_id;
