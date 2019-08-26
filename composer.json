@@ -1,0 +1,27 @@
+{
+  "name": "mantis/snowflake",
+  "description": "Distributed globally unique id generation algorithm for PHP.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mantis",
+      "email": "tangchunlinit@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mantis\\Snowflake\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Mantis\\Snowflake\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.2"
+  }
+}
